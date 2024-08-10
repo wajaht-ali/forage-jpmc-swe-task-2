@@ -67,7 +67,6 @@ def bwalk(min, max, std):
         max += normalvariate(0, std)
         yield abs((max % (rng * 2)) - rng) + min
 
-
 def market(t0=MARKET_OPEN):
     """ Generates a random series of market conditions,
         (time, price, spread).
